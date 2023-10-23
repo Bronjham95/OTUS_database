@@ -10,6 +10,8 @@ select year_game, sum(points) from test.statistic s
 group by year_game
 order by year_game;
 ```
+> Результат работы:
+![Alt text](image-1.png)
 ### 4. Написать cte показывающее тоже самое.
 ```sql
 with total as (
@@ -18,6 +20,8 @@ group by year_game
 order by year_game;
 ) select * from total;
 ```
+> Результат работы:
+![Alt text](image-2.png)
 ### 5. Используя функцию LAG вывести кол-во очков по всем игрокам за текущий год и за предыдущий.
 ```sql
 with total as (
@@ -32,3 +36,7 @@ group by s.player_name, s.year_game
 )
 select t2.*, lag(t2.actual) over(partition by t2.player_name order by t2.player_name) as previous from total t2;
 ```
+> Результат работы:
+
+![Alt text](image-3.png)
+![Alt text](image-4.png)
