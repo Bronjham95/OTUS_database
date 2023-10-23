@@ -41,4 +41,4 @@ select t2.*, lag(t2.actual) over(partition by t2.player_name order by t2.player_
 > Результат работы:
 
 ![Alt text](image-3.png)
-![Alt text](image-4.png)
+![Alt text](image-5.png)
