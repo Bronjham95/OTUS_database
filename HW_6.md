@@ -11,6 +11,7 @@ group by year_game
 order by year_game;
 ```
 > Результат работы:
+
 ![Alt text](image-1.png)
 ### 4. Написать cte показывающее тоже самое.
 ```sql
@@ -21,6 +22,7 @@ order by year_game;
 ) select * from total;
 ```
 > Результат работы:
+
 ![Alt text](image-2.png)
 ### 5. Используя функцию LAG вывести кол-во очков по всем игрокам за текущий год и за предыдущий.
 ```sql
