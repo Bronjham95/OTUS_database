@@ -254,4 +254,4 @@ set global max_connections = 100;
 #### 4.2. Протестить сисбенчем - результат теста приложить в README.
 >Выполнено : [✓]
 
-![Alt text](image-6.png)
+![Alt text](8-4.png)
